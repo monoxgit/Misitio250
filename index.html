@@ -1,28 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi primera página web</title>
+  <title>Consultoría Ambiental</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background-color: #474444;
       margin: 0;
       padding: 0;
     }
 
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: white;
+    }
+
     h1 {
-      color: #333333;
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #banner {
+      background-image: url('banner.jpg');
+      background-size: cover;
+      text-align: center;
+      padding: 100px;
+      color: white;
+    }
+
+    #banner h2 {
+      margin: 0;
+      font-size: 48px;
+    }
+
+    #services {
+      background-color: #f9f9f9;
+      padding: 50px;
       text-align: center;
     }
 
-    p {
-      color: #666666;
+    #services h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    #services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #services li {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    #projects {
+      padding: 50px;
       text-align: center;
+    }
+
+    #projects h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .project {
+      margin-bottom: 30px;
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenido a mi página web</h1>
-  <p>Esta es una página de ejemplo.</p>
-</body>
-</html>
+  <header>
+    <h1>Consultoría Ambiental</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="banner">
+    <h2>Trabajando juntos por un mundo más verde</h2>
+    <p>Ofrecemos soluciones sostenibles y consultoría experta en temas ambientales.</p>
+  </section>
+
+  <section id="services">
+    <h3>Nuestros Servicios</h3>
+    <ul>
+      <li>Evaluación de impacto ambiental</li>
+      <li>Gestión de recursos naturales</li>
+      <li>Auditorías ambientales</li>
+      <li>Educación ambiental</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h3>Nuestros Proyectos Recientes</h3>
+    <div class="project">
+      <img src="project1.jpg" alt="Proyecto 1">
+      <h4>
